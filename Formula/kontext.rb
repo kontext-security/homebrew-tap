@@ -5,23 +5,23 @@
 class Kontext < Formula
   desc "Identity, credentials, and governance for AI agents"
   homepage "https://kontext.security"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-dev/kontext-cli/releases/download/v0.1.0/kontext_0.1.0_darwin_amd64.tar.gz"
-      sha256 "96b1acf5c825be33b7d73795a610938d7b83eac8071e6be33aac7e5b3fd7681e"
+      url "https://github.com/kontext-dev/kontext-cli/releases/download/v0.1.1/kontext_0.1.1_darwin_amd64.tar.gz"
+      sha256 "62ae9b08773cf14e3625b88195e3fa7d527c9917c543bc55fd3f17debc2713c2"
 
-      define_method(:install) do
+      def install
         bin.install "kontext"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-dev/kontext-cli/releases/download/v0.1.0/kontext_0.1.0_darwin_arm64.tar.gz"
-      sha256 "223ee3b57bf45e0a71fbcf03f56190b8a6411245faf2c9a666a21bcbc0747651"
+      url "https://github.com/kontext-dev/kontext-cli/releases/download/v0.1.1/kontext_0.1.1_darwin_arm64.tar.gz"
+      sha256 "c760e2c3fd265eac40489bd35d427090f7d516d962d350274fe78b5e7dae7770"
 
-      define_method(:install) do
+      def install
         bin.install "kontext"
       end
     end
@@ -29,16 +29,16 @@ class Kontext < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-dev/kontext-cli/releases/download/v0.1.0/kontext_0.1.0_linux_amd64.tar.gz"
-      sha256 "3955de2a95bcbc94ce34cb69393976e41ef9ac917d037e0a936ecd48cb6bc269"
-      define_method(:install) do
+      url "https://github.com/kontext-dev/kontext-cli/releases/download/v0.1.1/kontext_0.1.1_linux_amd64.tar.gz"
+      sha256 "1788d72072612f1d440a6e1f0c29d4bdc6af307ba8b4897153a0d47b3819b2c8"
+      def install
         bin.install "kontext"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-dev/kontext-cli/releases/download/v0.1.0/kontext_0.1.0_linux_arm64.tar.gz"
-      sha256 "cb7a6b54e7968db035d5cc1c748e2fd091dc496947ffea1f9b29924f605faf76"
-      define_method(:install) do
+      url "https://github.com/kontext-dev/kontext-cli/releases/download/v0.1.1/kontext_0.1.1_linux_arm64.tar.gz"
+      sha256 "aa1fffb0bbc1cd60366bd9600453e25d10212bac2260126d60cd75ddbeb9564d"
+      def install
         bin.install "kontext"
       end
     end
