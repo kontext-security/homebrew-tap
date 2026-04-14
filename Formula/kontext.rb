@@ -5,28 +5,28 @@
 class Kontext < Formula
   desc "Identity, credentials, and governance for AI agents"
   homepage "https://kontext.security"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-dev/kontext-cli/releases/download/v0.2.1/kontext_0.2.1_darwin_amd64.tar.gz"
-      sha256 "b23954b6d32c003ddd21744f1589707ace08501ac4f505615a95c0c26966ad8d"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.2.2/kontext_0.2.2_darwin_amd64.tar.gz"
+      sha256 "4f857d3a30df30dbf82f004ba05098336b4542cc3b540c5f5601c432134452f8"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-dev/kontext-cli/releases/download/v0.2.1/kontext_0.2.1_darwin_arm64.tar.gz"
-      sha256 "1a7929526bdf07a523dd2dc05bcdbc2deca09cd4cc2bdc9ce3188589e5bab1c9"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.2.2/kontext_0.2.2_darwin_arm64.tar.gz"
+      sha256 "a2b50f68bb37720e8014266dcf355c106e3eb26ece2ffd342c0ed6f3c52e1fdb"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-dev/kontext-cli/releases/download/v0.2.1/kontext_0.2.1_linux_amd64.tar.gz"
-      sha256 "2e6e5134a9379df6d33b7898bb58bc090841d4fb9b7cc91edf276b5355f3b6d1"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.2.2/kontext_0.2.2_linux_amd64.tar.gz"
+      sha256 "8c49a71b811ba813bad572a2ad7d4cedb1cef4a77c026c601a81b0d6ef91a019"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-dev/kontext-cli/releases/download/v0.2.1/kontext_0.2.1_linux_arm64.tar.gz"
-      sha256 "38f73c6f171c5e6d7fc420b2db9fa48d7075efe22a5938c353682f6be479c369"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.2.2/kontext_0.2.2_linux_arm64.tar.gz"
+      sha256 "8eff406e231fe13d8ba8089a0a8e182dfbcdf18bccb7e3cee571eccd37244bae"
     end
   end
 
