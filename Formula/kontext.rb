@@ -5,28 +5,28 @@
 class Kontext < Formula
   desc "Identity, credentials, and governance for AI agents"
   homepage "https://kontext.security"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.6.0/kontext_0.6.0_darwin_amd64.tar.gz"
-      sha256 "62ed843c43649945c949d1fd32bbb1e2fa5ad338e8c6c833833b8280a297e612"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.7.0/kontext_0.7.0_darwin_amd64.tar.gz"
+      sha256 "9ac01e7e96c04958001baaa1d2712e5df6eb79193284fc01ee8d47f1b509fa1c"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.6.0/kontext_0.6.0_darwin_arm64.tar.gz"
-      sha256 "d7808c92b11be38129593f493779d317fc8de8cefb0838fc4508a8dcec0b097f"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.7.0/kontext_0.7.0_darwin_arm64.tar.gz"
+      sha256 "67a6d36a142eb093355e4c1da896bcb364e1b8e700a6eca3729257cc90b250a6"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.6.0/kontext_0.6.0_linux_amd64.tar.gz"
-      sha256 "62b9289f3b878cbe32ad97536e04090e5c92c5ec17cab6f496185fd847c0ac85"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.7.0/kontext_0.7.0_linux_amd64.tar.gz"
+      sha256 "c9d78ec3788daa3361341bae5a850db4055ac91b08d6aa2c33323c2a59703bff"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.6.0/kontext_0.6.0_linux_arm64.tar.gz"
-      sha256 "eb0d8349d8505bfdd7d6e2fac0c3ec9d998c7817edee33910f1ce11e30b4b30a"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.7.0/kontext_0.7.0_linux_arm64.tar.gz"
+      sha256 "3ba070fcd32e25b39df7f4569dd455c183fa027072094da0b79067870a624d75"
     end
   end
 
