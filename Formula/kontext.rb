@@ -5,30 +5,30 @@
 class Kontext < Formula
   desc "Identity, credentials, and governance for AI agents"
   homepage "https://kontext.security"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   depends_on "llama.cpp"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.9.0/kontext_0.9.0_darwin_amd64.tar.gz"
-      sha256 "7ac9c6bcc1d15de6b6aef188d490b27cfc8f0ebaba9094725499b58be501b63d"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.10.0/kontext_0.10.0_darwin_amd64.tar.gz"
+      sha256 "7e2e0de797571f3b2c9642e2b49da42da60bdcd5d8d4a65d83e4e7f3e07e008b"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.9.0/kontext_0.9.0_darwin_arm64.tar.gz"
-      sha256 "b2ea1a158ba99ef3ae61d659eea8e79612835c3d402109baf61ada6f6e14fe15"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.10.0/kontext_0.10.0_darwin_arm64.tar.gz"
+      sha256 "b14ddb4c72a19f844cd1dc77c30bec06f4c1462624a97b2a05a5f9a2f301b859"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.9.0/kontext_0.9.0_linux_amd64.tar.gz"
-      sha256 "06afa42c5569bd748f24ab76b96599f4ab2c9cb0ea43746e51fac7abe0e28684"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.10.0/kontext_0.10.0_linux_amd64.tar.gz"
+      sha256 "731a9bb3f2c70a1210180a8bac7bfdb6fbc4af00b5f533f835ecfe738aa392e5"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.9.0/kontext_0.9.0_linux_arm64.tar.gz"
-      sha256 "386b1c5e9eff3ea6b9605a21252e81da80375e134d9a68c3c48f7d49e8dd73c4"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.10.0/kontext_0.10.0_linux_arm64.tar.gz"
+      sha256 "34aa8b690f76c40f38611c061760a19d5c0aaf5c26e72f4a1a575ae600d61332"
     end
   end
 
