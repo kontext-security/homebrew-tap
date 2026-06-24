@@ -5,30 +5,30 @@
 class Kontext < Formula
   desc "Identity, credentials, and governance for AI agents"
   homepage "https://kontext.security"
-  version "0.12.0"
+  version "0.12.1"
   license "MIT"
 
   depends_on "llama.cpp"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.12.0/kontext_0.12.0_darwin_amd64.tar.gz"
-      sha256 "62ef3b9aa02da7cf0d5c157c48fa9720fb8504a9ce88597ffda34dc85da7e13d"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.12.1/kontext_0.12.1_darwin_amd64.tar.gz"
+      sha256 "c2812d9e3cd6525780fad81ca0a8add963eecba8573c0acb129c5215c896c18f"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.12.0/kontext_0.12.0_darwin_arm64.tar.gz"
-      sha256 "b1d68ca0162046a99cb7fac9210807d83822d9a98fcae7276240b0132e31d7f3"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.12.1/kontext_0.12.1_darwin_arm64.tar.gz"
+      sha256 "e3f84393432872f485c519748bde62e294ad4a9cb5a5fc4b1954393b25a5220e"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.12.0/kontext_0.12.0_linux_amd64.tar.gz"
-      sha256 "ac878029a9078813f2dc42cd9022cf1216dd8b7be4bfe2cb1a21d44a3584653d"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.12.1/kontext_0.12.1_linux_amd64.tar.gz"
+      sha256 "6a447728caca2d5f8b881c5801b52d859d07412bae58e5a6924a093dad5a05e3"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.12.0/kontext_0.12.0_linux_arm64.tar.gz"
-      sha256 "8ff59ccce54afcae5760ee32674587b7d090b9a627f246f7c55291f3b2d56836"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.12.1/kontext_0.12.1_linux_arm64.tar.gz"
+      sha256 "5cced6fdc795ebcfc23fd334c1fb68e2f8fa117cf85d6b9d6809aa83f3fb83e1"
     end
   end
 
