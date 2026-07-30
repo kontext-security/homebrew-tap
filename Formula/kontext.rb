@@ -5,30 +5,31 @@
 class Kontext < Formula
   desc "Identity, credentials, and governance for AI agents"
   homepage "https://kontext.security"
-  version "0.15.1"
+  version "0.16.0"
   license "MIT"
 
   depends_on "llama.cpp"
+  conflicts_with "kontext-staging"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.15.1/kontext_0.15.1_darwin_amd64.tar.gz"
-      sha256 "865fb2faf42eedddfcb718b44cedb935d4c960212277cfc3f2f0eb4c4ad2c8dd"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.16.0/kontext_0.16.0_darwin_amd64.tar.gz"
+      sha256 "25d04449e66eab5300bd458b9acb7f45712c20178eba61cae4fe414e356c72c4"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.15.1/kontext_0.15.1_darwin_arm64.tar.gz"
-      sha256 "639ed6d210926ec8e8c0635472c234da118988533cfe1b11ebca5ee599679526"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.16.0/kontext_0.16.0_darwin_arm64.tar.gz"
+      sha256 "932893c2e854dc580eb40eb6efcfebc7b3ddfdecb17954088ea37b94ca922942"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.15.1/kontext_0.15.1_linux_amd64.tar.gz"
-      sha256 "81f2823c19790e84a891aa6c192f6a10316266f40a46e8a07e595c37f50b33e8"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.16.0/kontext_0.16.0_linux_amd64.tar.gz"
+      sha256 "68623de6cd89f2f4f8ae826b9f38f0630cb76254e135207e7c3e7744f71c62b0"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.15.1/kontext_0.15.1_linux_arm64.tar.gz"
-      sha256 "2cf0fe2eea0d69a82c52bd3da7e0da8de819bed724b7a92cdc01edf40be8350a"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.16.0/kontext_0.16.0_linux_arm64.tar.gz"
+      sha256 "c1e071b6811a1175d6a914f8e9395fdbf93485ebaccc0b328912e7383fd59535"
     end
   end
 
