@@ -48,7 +48,7 @@ end
 class KontextStaging < Formula
   desc "Identity, credentials, and governance for AI agents"
   homepage "https://kontext.security"
-  version "0.14.1-staging.20260731.18"
+  version "0.0.0-staging.20260801.19"
   license "MIT"
 
   depends_on "llama.cpp"
@@ -56,27 +56,27 @@ class KontextStaging < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-security/kontext-cli-staging-releases/releases/download/v0.14.1-staging.20260731.18/kontext_0.14.1-staging.20260731.18_darwin_amd64.tar.gz",
+      url "https://github.com/kontext-security/kontext-cli-staging-releases/releases/download/v0.0.0-staging.20260801.19/kontext_0.0.0-staging.20260801.19_darwin_amd64.tar.gz",
           using: KontextStagingGitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "1deeb3c0f871c0d24fc2319bec39cebce1da108c80b0fba867e665bc24e1bea1"
+      sha256 "0a71420ef82a4db1939df95bbbbdff123c22e0e672f938dac8b8875d552e86bb"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-security/kontext-cli-staging-releases/releases/download/v0.14.1-staging.20260731.18/kontext_0.14.1-staging.20260731.18_darwin_arm64.tar.gz",
+      url "https://github.com/kontext-security/kontext-cli-staging-releases/releases/download/v0.0.0-staging.20260801.19/kontext_0.0.0-staging.20260801.19_darwin_arm64.tar.gz",
           using: KontextStagingGitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "a20b657db45cfc813ce4002084ad952acc849bf7e10662a7f929fa10d3177be0"
+      sha256 "6be24465f859d0ddd2289a564834ebb847069cc3edde469d279d90be04106287"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli-staging-releases/releases/download/v0.14.1-staging.20260731.18/kontext_0.14.1-staging.20260731.18_linux_amd64.tar.gz",
+      url "https://github.com/kontext-security/kontext-cli-staging-releases/releases/download/v0.0.0-staging.20260801.19/kontext_0.0.0-staging.20260801.19_linux_amd64.tar.gz",
           using: KontextStagingGitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "bca15b96ab62c94ff42423bef2716431e24487fc123351e0ead3adbd8dd45767"
+      sha256 "468ea888dc37d31df6cb76689934fe399c622fd889600b8bf3b0906574d4d913"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli-staging-releases/releases/download/v0.14.1-staging.20260731.18/kontext_0.14.1-staging.20260731.18_linux_arm64.tar.gz",
+      url "https://github.com/kontext-security/kontext-cli-staging-releases/releases/download/v0.0.0-staging.20260801.19/kontext_0.0.0-staging.20260801.19_linux_arm64.tar.gz",
           using: KontextStagingGitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "d5e0d9430b28b6095e98907741af3bac2866d67ed9f542e428f5dadd3ce0a48a"
+      sha256 "c94275a9f82daa918e45bd9cc0a40f21a5ae902630ce00d820df7505d9066cc5"
     end
   end
 
