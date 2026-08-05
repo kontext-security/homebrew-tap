@@ -5,7 +5,7 @@
 class Kontext < Formula
   desc "Identity, credentials, and governance for AI agents"
   homepage "https://kontext.security"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   depends_on "llama.cpp"
@@ -13,23 +13,23 @@ class Kontext < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.0.0/kontext_1.0.0_darwin_amd64.tar.gz"
-      sha256 "76b2eaeb8535034b68b0b7e2314fdf7e8b68d270b350078d5b4778f30b787924"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.0.1/kontext_1.0.1_darwin_amd64.tar.gz"
+      sha256 "70b97eaee71b9b0bec2e835574d0004aaa86c2c5865437a779b3d6f636cde518"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.0.0/kontext_1.0.0_darwin_arm64.tar.gz"
-      sha256 "7bf0678a45a045213eaab479a0c87523829cabc257e2aec11d69fed60aa8fd9d"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.0.1/kontext_1.0.1_darwin_arm64.tar.gz"
+      sha256 "d4d204d5d1da493aaf81a24c00a15958b0bde55ff4d5687231c8413dc10759be"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.0.0/kontext_1.0.0_linux_amd64.tar.gz"
-      sha256 "3bff053409b416b3b57e3eb62b2cb7350cb91edf97be546d36232ee8ac17eaf9"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.0.1/kontext_1.0.1_linux_amd64.tar.gz"
+      sha256 "ac528169d95d7f8956f7a04374e7655507eb96024e1573d56be41db5cbda6a9b"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.0.0/kontext_1.0.0_linux_arm64.tar.gz"
-      sha256 "4801ae84320ef38488b880b384641a232afb4a3a6e1386a59ef37cf3655d10ef"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.0.1/kontext_1.0.1_linux_arm64.tar.gz"
+      sha256 "df6096674126c036c09a464257b2f67a76d72de08a79b3fd4affa44f8a6e461e"
     end
   end
 
