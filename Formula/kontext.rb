@@ -5,7 +5,7 @@
 class Kontext < Formula
   desc "Identity, credentials, and governance for AI agents"
   homepage "https://kontext.security"
-  version "0.16.0"
+  version "1.0.0"
   license "MIT"
 
   depends_on "llama.cpp"
@@ -13,23 +13,23 @@ class Kontext < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.16.0/kontext_0.16.0_darwin_amd64.tar.gz"
-      sha256 "25d04449e66eab5300bd458b9acb7f45712c20178eba61cae4fe414e356c72c4"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.0.0/kontext_1.0.0_darwin_amd64.tar.gz"
+      sha256 "76b2eaeb8535034b68b0b7e2314fdf7e8b68d270b350078d5b4778f30b787924"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.16.0/kontext_0.16.0_darwin_arm64.tar.gz"
-      sha256 "932893c2e854dc580eb40eb6efcfebc7b3ddfdecb17954088ea37b94ca922942"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.0.0/kontext_1.0.0_darwin_arm64.tar.gz"
+      sha256 "7bf0678a45a045213eaab479a0c87523829cabc257e2aec11d69fed60aa8fd9d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.16.0/kontext_0.16.0_linux_amd64.tar.gz"
-      sha256 "68623de6cd89f2f4f8ae826b9f38f0630cb76254e135207e7c3e7744f71c62b0"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.0.0/kontext_1.0.0_linux_amd64.tar.gz"
+      sha256 "3bff053409b416b3b57e3eb62b2cb7350cb91edf97be546d36232ee8ac17eaf9"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v0.16.0/kontext_0.16.0_linux_arm64.tar.gz"
-      sha256 "c1e071b6811a1175d6a914f8e9395fdbf93485ebaccc0b328912e7383fd59535"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.0.0/kontext_1.0.0_linux_arm64.tar.gz"
+      sha256 "4801ae84320ef38488b880b384641a232afb4a3a6e1386a59ef37cf3655d10ef"
     end
   end
 
