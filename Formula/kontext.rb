@@ -5,7 +5,7 @@
 class Kontext < Formula
   desc "Identity, credentials, and governance for AI agents"
   homepage "https://kontext.security"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   depends_on "llama.cpp"
@@ -13,23 +13,23 @@ class Kontext < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.1.0/kontext_1.1.0_darwin_amd64.tar.gz"
-      sha256 "b66f9200daa3f6395abf4ce8c8db079c94df54e04bc181e3ba4bc8b2425a2641"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.1.1/kontext_1.1.1_darwin_amd64.tar.gz"
+      sha256 "de14f17d11a82531c74b32a0e1a1992861e54f466600d929b4167541017d79f7"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.1.0/kontext_1.1.0_darwin_arm64.tar.gz"
-      sha256 "3aef106d2c1c04ccbfc3fa130456288c6857e14bd4e1d41088f163dd7faa43ba"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.1.1/kontext_1.1.1_darwin_arm64.tar.gz"
+      sha256 "ff5315d9a0049189861d329dd570824d47f7c4b4d6b911d35830c291b52ef847"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.1.0/kontext_1.1.0_linux_amd64.tar.gz"
-      sha256 "7ef02f73364d6c4b71d6c47a32196c030b652f6636b61bf9f2095d5ce5d697d6"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.1.1/kontext_1.1.1_linux_amd64.tar.gz"
+      sha256 "974c045b7ba887ff222895424c44f326ab4ffb97c41f915a326ce16fcf3ec008"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.1.0/kontext_1.1.0_linux_arm64.tar.gz"
-      sha256 "9eec2cb9c8ab4c77f15f3644151de8c9f4fea5a0231b7bb46e55c2a60f4dd9c5"
+      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.1.1/kontext_1.1.1_linux_arm64.tar.gz"
+      sha256 "d6c8efce36324e42e41bd35b6156b25bd8587ab52ac073b006cd837eb92e826c"
     end
   end
 
