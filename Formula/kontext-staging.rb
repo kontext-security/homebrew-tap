@@ -15,7 +15,7 @@ class KontextStagingGitHubPrivateRepositoryReleaseDownloadStrategy < CurlDownloa
     @token = ENV["HOMEBREW_GITHUB_API_TOKEN"].to_s.strip
     odie <<~EOS if @token.empty?
       HOMEBREW_GITHUB_API_TOKEN is required to install kontext-staging: release
-      assets live in the private kontext-security/kontext-cli-staging-releases repository.
+      assets live in the private kontext-security/kontext-staging-releases repository.
 
       Authenticate with GitHub CLI (your account must have read access to that
       repo) and retry:
@@ -56,12 +56,12 @@ class KontextStaging < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-security/kontext-cli-staging-releases/releases/download/v0.0.0-staging.20260806.21/kontext_0.0.0-staging.20260806.21_darwin_amd64.tar.gz",
+      url "https://github.com/kontext-security/kontext-staging-releases/releases/download/v0.0.0-staging.20260806.21/kontext_0.0.0-staging.20260806.21_darwin_amd64.tar.gz",
           using: KontextStagingGitHubPrivateRepositoryReleaseDownloadStrategy
       sha256 "2be3c55b90391ce8f23de34e52583becc934a3d770bf87f888c57392ad1c904f"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-security/kontext-cli-staging-releases/releases/download/v0.0.0-staging.20260806.21/kontext_0.0.0-staging.20260806.21_darwin_arm64.tar.gz",
+      url "https://github.com/kontext-security/kontext-staging-releases/releases/download/v0.0.0-staging.20260806.21/kontext_0.0.0-staging.20260806.21_darwin_arm64.tar.gz",
           using: KontextStagingGitHubPrivateRepositoryReleaseDownloadStrategy
       sha256 "953e3d68ceb5d3286a10552f728689fe57b32328bb2bfc6ddc9c68092cd3dc9d"
     end
@@ -69,12 +69,12 @@ class KontextStaging < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli-staging-releases/releases/download/v0.0.0-staging.20260806.21/kontext_0.0.0-staging.20260806.21_linux_amd64.tar.gz",
+      url "https://github.com/kontext-security/kontext-staging-releases/releases/download/v0.0.0-staging.20260806.21/kontext_0.0.0-staging.20260806.21_linux_amd64.tar.gz",
           using: KontextStagingGitHubPrivateRepositoryReleaseDownloadStrategy
       sha256 "0d33123a425e619080f787e1f4193ab7c01417161d226424ffedb993caa1c198"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli-staging-releases/releases/download/v0.0.0-staging.20260806.21/kontext_0.0.0-staging.20260806.21_linux_arm64.tar.gz",
+      url "https://github.com/kontext-security/kontext-staging-releases/releases/download/v0.0.0-staging.20260806.21/kontext_0.0.0-staging.20260806.21_linux_arm64.tar.gz",
           using: KontextStagingGitHubPrivateRepositoryReleaseDownloadStrategy
       sha256 "9b33ae9a0035d27d830ad8769db912bf04d6d9c1c952f97e9db2713a3a3e0354"
     end

@@ -13,22 +13,22 @@ class Kontext < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.2.0/kontext_1.2.0_darwin_amd64.tar.gz"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.2.0/kontext_1.2.0_darwin_amd64.tar.gz"
       sha256 "003bfdc302d195c27a1b23e8d80d3f2b740a2821541f14dfa56fe9abe7c7a69f"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.2.0/kontext_1.2.0_darwin_arm64.tar.gz"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.2.0/kontext_1.2.0_darwin_arm64.tar.gz"
       sha256 "06e27619213235a7f907e383b5db547c2597e4915d69b55877c1aeacc0271400"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.2.0/kontext_1.2.0_linux_amd64.tar.gz"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.2.0/kontext_1.2.0_linux_amd64.tar.gz"
       sha256 "b94a760721093671b3c5800af0cb05be9e4405426bd78eb7623e9990676d060f"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext-cli/releases/download/v1.2.0/kontext_1.2.0_linux_arm64.tar.gz"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.2.0/kontext_1.2.0_linux_arm64.tar.gz"
       sha256 "8080254eaea8a7045c2ff167fbe9678c410a8c32e35fe8d3af15c0e492c1b162"
     end
   end
