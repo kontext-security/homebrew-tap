@@ -53,14 +53,14 @@ class Sandy < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-security/sandy/releases/download/v0.1.0/sandy_0.1.0_darwin_amd64.tar.gz",
+      url "https://github.com/kontext-security/sandy/releases/download/v0.1.1/sandy_0.1.1_darwin_amd64.tar.gz",
           using: SandyGitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "9c4e6f97040bab198edb3b565a5a8844b251d727496c3377f78d733c979488f7"
+      sha256 "a6de35c6fc882e166a85c9e8f927d6a82f57f5fcf7bbf73d3fbd731f229a9bcd"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-security/sandy/releases/download/v0.1.0/sandy_0.1.0_darwin_arm64.tar.gz",
+      url "https://github.com/kontext-security/sandy/releases/download/v0.1.1/sandy_0.1.1_darwin_arm64.tar.gz",
           using: SandyGitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "c7e8c4e1cbf25d4ff48cc36612ae979008ab03227f4bbd8bc0b619c1a3fcd79b"
+      sha256 "16ef5fd5abb0a66c89fa8902f7aec2dca95ac1f5903f43deb1e17d18e46d8d36"
     end
   end
 
