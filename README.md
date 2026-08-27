@@ -2,21 +2,19 @@
 
 Homebrew formulae maintained by [Kontext Security](https://kontext.security).
 
-## Sandy (private preview)
+## Sandy
 
 Sandy is installed independently and does not require the Kontext CLI or
-daemon. During the private preview, authenticate with an account that can read
-`kontext-security/sandy`:
+daemon.
 
 ```bash
-HOMEBREW_GITHUB_API_TOKEN="$(gh auth token)" \
-  brew install kontext-security/tap/sandy
+brew install kontext-security/tap/sandy
 ```
 
-Use the same environment variable for upgrades:
+Verify that macOS sandboxing is available:
 
 ```bash
-HOMEBREW_GITHUB_API_TOKEN="$(gh auth token)" brew upgrade sandy
+sandy doctor
 ```
 
 ## Kontext
@@ -30,5 +28,5 @@ Kontext is installed and configured independently with `kontext setup`.
 ## Upgrade
 
 ```bash
-brew upgrade kontext
+brew upgrade sandy kontext
 ```
