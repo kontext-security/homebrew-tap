@@ -5,7 +5,7 @@
 class Kontext < Formula
   desc "Identity, credentials, and governance for AI agents"
   homepage "https://kontext.security"
-  version "1.4.0"
+  version "1.5.0"
   license "MIT"
 
   depends_on "llama.cpp"
@@ -13,23 +13,23 @@ class Kontext < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-security/kontext/releases/download/v1.4.0/kontext_1.4.0_darwin_amd64.tar.gz"
-      sha256 "91697c2ea693f34ad900878438519c8861ed6403cd4f9b8cff727ed13f33efc5"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.5.0/kontext_1.5.0_darwin_amd64.tar.gz"
+      sha256 "dabd5ef7babc1ac2102821ff0302102783cfce115361fdc75a4c37661e5f0a64"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-security/kontext/releases/download/v1.4.0/kontext_1.4.0_darwin_arm64.tar.gz"
-      sha256 "ec52e5adf27218ecec8ec4cc32375e4e91b80343bb0a185b3a0f1b9ee171a0d3"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.5.0/kontext_1.5.0_darwin_arm64.tar.gz"
+      sha256 "0c3ad9ecb964f3dce36182a8bbaae2425ae9055df6b5258f58892785e5ea116d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext/releases/download/v1.4.0/kontext_1.4.0_linux_amd64.tar.gz"
-      sha256 "b92d164781a171948607aee1ffad5eb160fb19d67e2b69620befca3422bcf892"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.5.0/kontext_1.5.0_linux_amd64.tar.gz"
+      sha256 "d3510b064a95995bcc35ebb4440ced177c2e7c89aaece8b0d5c8ebae8f17e155"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext/releases/download/v1.4.0/kontext_1.4.0_linux_arm64.tar.gz"
-      sha256 "161decca49d396fd4147c82906cb1dc525b54f041bde10afb8bf912ae1b415e6"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.5.0/kontext_1.5.0_linux_arm64.tar.gz"
+      sha256 "cba2d5c2e884a11e06b90df790297eae86e574d0472dfdc104ae00fca7eb8537"
     end
   end
 
