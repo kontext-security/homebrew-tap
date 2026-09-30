@@ -26,6 +26,8 @@ class KontextScan < Formula
   version "0.1.1"
   license "MIT"
 
+  disable! date: "2026-09-30", because: "is no longer distributed; its release assets are internal-only"
+
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kontext-dev/credential-scan/releases/download/v0.1.1/kontext-scan_Darwin_amd64.tar.gz",
