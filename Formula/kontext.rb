@@ -5,7 +5,7 @@
 class Kontext < Formula
   desc "Identity, credentials, and governance for AI agents"
   homepage "https://kontext.security"
-  version "1.9.1"
+  version "1.10.0"
   license "MIT"
 
   depends_on "llama.cpp"
@@ -13,23 +13,23 @@ class Kontext < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-security/kontext/releases/download/v1.9.1/kontext_1.9.1_darwin_amd64.tar.gz"
-      sha256 "60b7387538a7c22ebdeaa80bc1603dfc086cec2f8898799c30e0a9df0cdd5399"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.10.0/kontext_1.10.0_darwin_amd64.tar.gz"
+      sha256 "40b25c1cf673c5c6900f8c94401fdaeae6aacc8853644437e9c7e4e086650c9f"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-security/kontext/releases/download/v1.9.1/kontext_1.9.1_darwin_arm64.tar.gz"
-      sha256 "293e38efab2f813f4e7e92f004e45ce999bf5b6a07a4904067a6a8c94b9a367e"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.10.0/kontext_1.10.0_darwin_arm64.tar.gz"
+      sha256 "ddc618ac2a078a77ec92348c3bf28af0614352665038494a18b86039ebd194ba"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext/releases/download/v1.9.1/kontext_1.9.1_linux_amd64.tar.gz"
-      sha256 "ca557a211edebc5780cafbba3fe7135155774c325fd22b9a1fd9bed44f281caa"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.10.0/kontext_1.10.0_linux_amd64.tar.gz"
+      sha256 "8cd276e705032853c0e8fd8b51a828749d10c12304597236f63206fda7042935"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext/releases/download/v1.9.1/kontext_1.9.1_linux_arm64.tar.gz"
-      sha256 "4d9e713926f22fe4e4810f9621292870327a9b4aed7bc7dc4ca6ff15399c592f"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.10.0/kontext_1.10.0_linux_arm64.tar.gz"
+      sha256 "af2d952d05cfa60910c05c3a71118370e0febc2291670bfd04233fa4133c090b"
     end
   end
 
