@@ -5,31 +5,33 @@
 class Kontext < Formula
   desc "Identity, credentials, and governance for AI agents"
   homepage "https://kontext.security"
-  version "1.11.0"
+  version "1.12.0"
   license "MIT"
 
-  depends_on "llama.cpp"
-  conflicts_with "kontext-staging"
-
+  # No conflicts_with: Homebrew 7 trusts only the formula named on the
+  # command line, and loading the other channel to check the conflict makes
+  # it refuse the install ("Refusing to load formula ... from untrusted
+  # tap"). Both channels install bin/kontext, so brew still will not link one
+  # over the other.
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-security/kontext/releases/download/v1.11.0/kontext_1.11.0_darwin_amd64.tar.gz"
-      sha256 "e7f821bbb4b838e5471efe90458fd8e2685eb295829984ef9486eab6a1a71805"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.12.0/kontext_1.12.0_darwin_amd64.tar.gz"
+      sha256 "28a71c3fffccb5dbc74875e5550d4225c3e572121247874c2708e99ae4f99298"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-security/kontext/releases/download/v1.11.0/kontext_1.11.0_darwin_arm64.tar.gz"
-      sha256 "8d09b2bfaf46686800b62f8cf880c0df34b07228b47ddfb3a22f574ae8ed55da"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.12.0/kontext_1.12.0_darwin_arm64.tar.gz"
+      sha256 "90d2c5ff5c7369d6601364177a02cb1c01968f198b080b9d70f9d7aeeb4b34d7"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext/releases/download/v1.11.0/kontext_1.11.0_linux_amd64.tar.gz"
-      sha256 "451090b9b6babbc8ce3985e4597b1292699c78418ad0916fce11179c4671b2b3"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.12.0/kontext_1.12.0_linux_amd64.tar.gz"
+      sha256 "33bcc7bbcf0b724c997e7c47d3aff08e9ce28e211bf42918f3826f33bb1b2197"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext/releases/download/v1.11.0/kontext_1.11.0_linux_arm64.tar.gz"
-      sha256 "262c560dc4073cd664dd29a37838aa9d783c3a66d7d30a68218e46445ed96ae4"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.12.0/kontext_1.12.0_linux_arm64.tar.gz"
+      sha256 "b1f0dc3556797f7acde7128eab15b533db81492091de334949079af5a43ec181"
     end
   end
 
