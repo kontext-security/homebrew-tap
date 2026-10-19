@@ -5,7 +5,7 @@
 class Kontext < Formula
   desc "Identity, credentials, and governance for AI agents"
   homepage "https://kontext.security"
-  version "1.12.0"
+  version "1.12.1"
   license "MIT"
 
   # No conflicts_with: Homebrew 7 trusts only the formula named on the
@@ -15,23 +15,23 @@ class Kontext < Formula
   # over the other.
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kontext-security/kontext/releases/download/v1.12.0/kontext_1.12.0_darwin_amd64.tar.gz"
-      sha256 "28a71c3fffccb5dbc74875e5550d4225c3e572121247874c2708e99ae4f99298"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.12.1/kontext_1.12.1_darwin_amd64.tar.gz"
+      sha256 "2d70269c418388d898e8747dafea11c1ecac111b041c12767c81ac6c9d6b507c"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kontext-security/kontext/releases/download/v1.12.0/kontext_1.12.0_darwin_arm64.tar.gz"
-      sha256 "90d2c5ff5c7369d6601364177a02cb1c01968f198b080b9d70f9d7aeeb4b34d7"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.12.1/kontext_1.12.1_darwin_arm64.tar.gz"
+      sha256 "02c6036bbc865d7ef6df2e30175d8276023d35668486802e790f86aa8019979b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext/releases/download/v1.12.0/kontext_1.12.0_linux_amd64.tar.gz"
-      sha256 "33bcc7bbcf0b724c997e7c47d3aff08e9ce28e211bf42918f3826f33bb1b2197"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.12.1/kontext_1.12.1_linux_amd64.tar.gz"
+      sha256 "49c969174b2e9c0a61c3163d259ac0b5a66421caf136bb4dff42f20255eaf868"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kontext-security/kontext/releases/download/v1.12.0/kontext_1.12.0_linux_arm64.tar.gz"
-      sha256 "b1f0dc3556797f7acde7128eab15b533db81492091de334949079af5a43ec181"
+      url "https://github.com/kontext-security/kontext/releases/download/v1.12.1/kontext_1.12.1_linux_arm64.tar.gz"
+      sha256 "8c3842c611b3b03f2003da07c6d234d5a61f5b17b135e6378f8e0300e16c7c00"
     end
   end
 
